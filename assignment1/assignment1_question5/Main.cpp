@@ -1,4 +1,5 @@
 #include "TestHarness.h"
+#include <cstdlib>
 #include <iostream>
 
 int main()
@@ -10,8 +11,8 @@ int main()
     TestRegistry::runAllTests(tr);
 
 	// force console screen to hold
-	char ch;
-	std::cin >> ch;
+	//char ch;
+	//std::cin >> ch;
 
     return 0;
 }
