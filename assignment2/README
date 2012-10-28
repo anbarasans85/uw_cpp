@@ -1,0 +1,3 @@
+* I used Linux g++ for compilation and running the executable.
+* I could have placed the test cpp files in the same folder with single copy of CppUnitLite source files but I have placed in separate folders for better organization and easy future reference.
+* CppUnitLite test cases for question3 is named as StringStreamTest.cpp, question4 is ArrayTest.cpp and question5 is VectoryTest.cpp
