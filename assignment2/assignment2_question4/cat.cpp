@@ -15,7 +15,7 @@ char * cat_fun_c(char *s1,char *s2)
 	return f;
 }
 
-std::string cat_fun_cpp(const std::string s1,const std::string s2)
+std::string cat_fun_cpp(const std::string &s1,const std::string &s2)
 {
 	std::string s3=s1+s2;
 	return s3;
