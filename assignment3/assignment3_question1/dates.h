@@ -1,3 +1,7 @@
+#ifndef HEADER_FILE
+#define HEADER_FILE
+
+#include<string>
 struct Date
 {
 	int year;
@@ -16,3 +20,5 @@ void add_month(struct Date &);
 void add_year(struct Date &);
 void next_monday(struct Date &);
 std::string days(const struct Date);
+
+#endif

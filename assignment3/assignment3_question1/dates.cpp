@@ -2,7 +2,7 @@
 
 void print_date(const struct Date &arg_date)
 {
-	std::cout << "Date is:" << arg_date.year << "/" << arg_date.month << "/" << arg_date.day << std::endl;
+//	std::cout << "Date is:" << arg_date.year << "/" << arg_date.month << "/" << arg_date.day << std::endl;
 
 	return;
 }
@@ -59,7 +59,7 @@ void add_day(struct Date &arg_date)
 		arg_date.month=1;
 		arg_date.day=1;
 	} else {
-		std::cout << "add_day something wrong." << arg_date.year << arg_date.month << arg_date.day << std::endl;
+		//std::cout << "add_day something wrong." << arg_date.year << arg_date.month << arg_date.day << std::endl;
 	}
 		
 	return;
@@ -97,7 +97,7 @@ void add_month(struct Date &arg_date)
 		arg_date.year++;
 		arg_date.month=1;
 	} else {
-		std::cout << "add_month something wrong." << arg_date.year << arg_date.month << arg_date.day << std::endl;
+		//std::cout << "add_month something wrong." << arg_date.year << arg_date.month << arg_date.day << std::endl;
 	}
 		
 	return;
@@ -168,7 +168,7 @@ void next_monday(struct Date &arg_date)
 {
 	std::string temp_string("Monday");
 	while(temp_string.compare(days(arg_date))) {
-		std::cout << "days: " << arg_date.year << arg_date.month << arg_date.day << std::endl;
+		//std::cout << "days: " << arg_date.year << arg_date.month << arg_date.day << std::endl;
 		add_day(arg_date);
 	}
 }
