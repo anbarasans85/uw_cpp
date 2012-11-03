@@ -1,0 +1,9 @@
+* I used Linux g++ for compilation and running the executable.
+* I could have placed the test cpp files in the same folder with single copy of CppUnitLite source files but I have placed in separate folders for better organization and easy future reference.
+Newly added files:
+* For question1: swap.h, swap.cpp, SwapTest.cpp
+* For question2: StringStreamTest.cpp
+* For question3: StringStreamSortTest.cpp
+* For question4: cat.h, cat.cpp, CatTest.cpp 
+
+Answer to question 4: using string type in cpp is easier and it is concise compared to c implementation of strcat.
