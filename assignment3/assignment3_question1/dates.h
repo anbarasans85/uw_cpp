@@ -2,15 +2,13 @@
 #define HEADER_FILE
 
 #include<string>
+
 struct Date
 {
 	int year;
 	int month;
 	int day;
 };
-
-enum DAYS {SUNDAY=1,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY};
-DAYS first_day=SUNDAY;
 
 void set_date(struct Date &);
 void print_date(const struct Date &);

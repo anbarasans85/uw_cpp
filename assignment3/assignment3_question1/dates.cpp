@@ -136,7 +136,7 @@ std::string days(const struct Date arg_date)
 //		std::cout << "days: " << start_date.year << start_date.month << start_date.day << std::endl;
 	}
 
-	day_of_the_week=first_day+(days_count%7);
+	day_of_the_week=1+(days_count%7);
 	switch(day_of_the_week) {
 		case 1:
 			day="Sunday";

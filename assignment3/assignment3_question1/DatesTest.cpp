@@ -6,28 +6,55 @@
 
 // replace testName with the name of the particular test. Replace ClassName with
 // the name of the class being tested
+
+struct Date expected_date,actual_date;
+
+#define CHECK_DATES(expected,actual) \
+	CHECK_EQUAL(expected.year,actual.year); \
+	CHECK_EQUAL(expected.month,actual.month); \
+	CHECK_EQUAL(expected.day,actual.day); \
+
 TEST(question1_test1, days_test)
 {	
-	struct Date actual_date,expected_date,date;
-
+	actual_date.year=2012;
+	actual_date.month=2;
+	actual_date.day=29;
+	add_day(actual_date); //add day
 	expected_date.year=2012;
-	expected_date.month=1;
-	expected_date.day=20;
-	
-	actual_date=expected_date;
-
-	CHECK_EQUAL(expected_date.year,actual_date.year);
-	CHECK_EQUAL(expected_date.month,actual_date.month);
-	CHECK_EQUAL(expected_date.day,actual_date.day);
-
-	date.year=2012;
-	date.month=1;
-	date.day=20;
-	add_day(date);
+	expected_date.month=3;
+	expected_date.day=1;	
+	CHECK_DATES(expected_date,actual_date);
+}
+TEST(question1_test2, days_test)
+{	
+	actual_date.year=2012;
+	actual_date.month=8;
+	actual_date.day=30;
+	add_day(actual_date); //add day
 	expected_date.year=2012;
+	expected_date.month=8;
+	expected_date.day=31;	
+	CHECK_DATES(expected_date,actual_date);
+}
+TEST(question1_test3, days_test)
+{	
+	actual_date.year=2012;
+	actual_date.month=12;
+	actual_date.day=1;
+	add_day(actual_date); //add day
+	expected_date.year=2012;
+	expected_date.month=12;
+	expected_date.day=2;	
+	CHECK_DATES(expected_date,actual_date);
+}
+TEST(question1_test4, days_test)
+{	
+	actual_date.year=2012;
+	actual_date.month=12;
+	actual_date.day=31;
+	add_day(actual_date); //add day
+	expected_date.year=2013;
 	expected_date.month=1;
-	expected_date.day=21;
-	CHECK_EQUAL(expected_date.year,date.year);
-	CHECK_EQUAL(expected_date.month,date.month);
-	CHECK_EQUAL(expected_date.day,date.day);
+	expected_date.day=1;	
+	CHECK_DATES(expected_date,actual_date);
 }
