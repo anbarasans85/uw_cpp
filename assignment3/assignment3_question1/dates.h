@@ -16,7 +16,7 @@ int check_month_end(const struct Date &);
 void add_day(struct Date &);
 void add_month(struct Date &);
 void add_year(struct Date &);
-void next_monday(struct Date &);
+struct Date next_monday(struct Date);
 std::string days(const struct Date);
 
 #endif
