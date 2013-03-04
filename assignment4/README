@@ -1,0 +1,12 @@
+When a object is passed by value, copy of object is created and copy constructor is called.
+
+Below, each step indicates default constructor, copy constructor and destructor count in the format (default,copy,destructor)
+
+1. In main: object created (default constructor) - (1,0,0)
+2. In main: Invoking f1: object created (copy constructor) - (1,1,0)
+3. In f1: object created (default constructor) - (2,1,0)
+4. In f1: Invoking f2: object created (copy constructor) - (2,2,0)
+5. In f2: object created (copy constructor) - (2,3,0)
+6. In f2: invoking f3: object is not passed by value and no constructor is called - (2,3,0)
+7. In f3: invoking f4: object is not passed by value and no constructor is called - (2,3,0)
+8. When functions return (f4,f3,f2,f1,main), destructors are called and destructor counts to 5 when main returns. (2,3,5)
