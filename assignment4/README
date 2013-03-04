@@ -10,3 +10,8 @@ Below, each step indicates default constructor, copy constructor and destructor 
 6. In f2: invoking f3: object is not passed by value and no constructor is called - (2,3,0)
 7. In f3: invoking f4: object is not passed by value and no constructor is called - (2,3,0)
 8. When functions return (f4,f3,f2,f1,main), destructors are called and destructor counts to 5 when main returns. (2,3,5)
+
+In total:
+default constructor - 2 times
+copy constructor - 2 times
+destructor - 5 times
