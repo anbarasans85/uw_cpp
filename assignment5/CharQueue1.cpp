@@ -1,21 +1,20 @@
-#include <iostream>
-#include <deque>
+#include "CharQueue1.h"
 
-using namespace std;
-
-int main()
+void CharQueue1::enqueue(char c)
 {
-    deque<char> charqueue;
+    char_queue.push_back(c);
+    return;
+}
 
-    charqueue.push_back('a');
-    charqueue.push_back('e');
-    charqueue.push_back('i');
-    charqueue.push_back('o');
-    charqueue.push_back('u');
-    
-    while(!charqueue.empty()) {
-        cout << "Char: " << charqueue.front() << endl;
-        charqueue.pop_front();
+char CharQueue1::dequeue()
+{
+    char c=0;
+
+    if(!char_queue.empty()) {
+        c=char_queue.front();
+        char_queue.pop_front();
+    } else {
+        std::cout << "Dequeue but queue is empty";
     }
-    return 0;
+    return c;
 }

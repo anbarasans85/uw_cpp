@@ -1,21 +1,17 @@
+#ifndef CHARQUEUE1_H_
+#define CHARQUEUE1_H_
+
 #include <iostream>
 #include <deque>
 
-using namespace std;
-
-int main()
+class CharQueue1
 {
-    deque<char> charqueue;
+    public:
+        void enqueue(char);
+        char dequeue();
 
-    charqueue.push_back('a');
-    charqueue.push_back('e');
-    charqueue.push_back('i');
-    charqueue.push_back('o');
-    charqueue.push_back('u');
-    
-    while(!charqueue.empty()) {
-        cout << "Char: " << charqueue.front() << endl;
-        charqueue.pop_front();
-    }
-    return 0;
-}
+    private:
+        std::deque<char> char_queue;
+};
+
+#endif
