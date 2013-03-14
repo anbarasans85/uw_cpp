@@ -1,20 +1,20 @@
 #include "CharQueue1.h"
 
-void CharQueue1::enqueue(char c)
+void CharQueue1::cq1_enqueue(char c)
 {
-    char_queue.push_back(c);
+    cq1_queue.push_back(c);
     return;
 }
 
-char CharQueue1::dequeue()
+char CharQueue1::cq1_dequeue()
 {
     char c=0;
 
-    if(!char_queue.empty()) {
-        c=char_queue.front();
-        char_queue.pop_front();
+    if(!cq1_queue.empty()) {
+        c=cq1_queue.front();
+        cq1_queue.pop_front();
     } else {
-        std::cout << "Dequeue but queue is empty";
+        std::cout << "Dequeue but queue is empty" << std::endl;
     }
     return c;
 }

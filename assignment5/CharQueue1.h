@@ -7,11 +7,11 @@
 class CharQueue1
 {
     public:
-        void enqueue(char);
-        char dequeue();
+        void cq1_enqueue(char);
+        char cq1_dequeue();
 
     private:
-        std::deque<char> char_queue;
+        std::deque<char> cq1_queue;
 };
 
 #endif
