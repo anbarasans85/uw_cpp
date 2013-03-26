@@ -1,0 +1,9 @@
+1. CharQueue1, CharQueue2 cpp and .h files are implemented.
+2. CharQueue .cpp and .h are also included. (In the discussion thread it was mentioned that CharQueue.h is not needed but I could not avoid it.)
+3. CharQueue uses CharQueue1 for its queue implementation. This can be changed to CharQueue2 which uses a array.
+
+Due to assignment deadline time, I could not implement many requirements:
+1. CharQueue2 array that needs to grow dynamically. But I did array limited by MAX_QUEUE_SIZE macro.
+2. If I had used heap, I may have used copy constructor. I did not use copy constructor for this assignment.
+
+I will refer to the solution and learn from it.
