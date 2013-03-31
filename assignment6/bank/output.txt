@@ -1,0 +1,4 @@
+Name: Buffet
+Account Number: 6
+Account Type: Checking
+Balance: 300
