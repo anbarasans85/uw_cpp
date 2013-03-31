@@ -41,5 +41,7 @@ TEST(SpaceTest, Histogram)
 }
 TEST(PrintTest, Histogram)
 {
+    /* dummy test case to demonstrate file reading and operator
+    overloading */
     file_count();
 }
