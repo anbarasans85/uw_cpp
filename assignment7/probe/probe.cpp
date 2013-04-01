@@ -1,50 +1,32 @@
 #include "probe.h"
 
-SimpleClass::SimpleClass()
+ProbeClass::ProbeClass()
+{
+    object_count=0;
+}
+
+ProbeClass::~ProbeClass()
+{
+}
+
+void ProbeClass::operator++()
 {
     object_count++;
 }
 
-SimpleClass::SimpleClass(int i)
-{
-    object_count++;
-    int_data=i;
-}
-
-SimpleClass::SimpleClass(int i, char ch)
-{
-    object_count++;
-    int_data=i;
-    char_data=ch;
-}
-
-SimpleClass::SimpleClass(SimpleClass &s)
-{
-    object_count++;
-}
-
-SimpleClass::~SimpleClass()
+void ProbeClass::operator--()
 {
     object_count--;
 }
-void SimpleClass::SimpleFunction1(void)
+
+std::ostream& operator<<(std::ostream& out)
 {
-    SimpleFunction1_count++;
-}
-void SimpleClass::SimpleFunction2(void)
-{
-    SimpleFunction2_count++;
+    out << "ProbeClass Op. Overloading Count: " << object_count;
+
+    return out;
 }
 
-unsigned int function1()
+unsigned int ProbeClass::GetObjectCount()
 {
-    static unsigned int fun_count=0;
-    fun_count++;
-    return fun_count;
-}
-unsigned int function2()
-{
-    static unsigned int fun_count=0;
-    fun_count++;
-    return fun_count;
+    return object_count;
 }

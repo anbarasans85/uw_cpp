@@ -1,27 +1,22 @@
-#ifndef SIMPLECLASS_H
-#define SIMPLECLASS_H
+#ifndef PROBECLASS_H
+#define PROBECLASS_H
+
+#pragma once
 
 #include <iostream>
 
-class SimpleClass
+class ProbeClass
 {
     public:
-        SimpleClass();
-        SimpleClass(int);
-        SimpleClass(int,char);
-        SimpleClass(SimpleClass&);
-        ~SimpleClass();
-
-        static unsigned int probe_object_count() { return object_count; }
-
+        ProbeClass();
+        ~ProbeClass();
+        void operator++(); 
+        void operator--(); 
+        unsigned int GetObjectCount();
+        friend std::ostream& operator<<(std::ostream&);
     private:
-        int int_data;
-        char char_data;
-
-        static unsigned int object_count;
+        unsigned int object_count;
 };
 
-unsigned int function1();
-unsigned int function2();
 
 #endif
