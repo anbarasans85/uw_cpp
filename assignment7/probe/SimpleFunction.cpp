@@ -10,8 +10,8 @@ int main()
     function1();
     function2();
     
-    std::cout << "Count: " << p1.GetObjectCount() << std::endl; 
-    //prints 2 which is correct
+    /*prints 3 which is correct*/
+    std::cout << p1;
 
     return 0;
 }
