@@ -13,7 +13,7 @@ class ProbeClass
         void operator++(); 
         void operator--(); 
         unsigned int GetObjectCount();
-        friend std::ostream& operator<<(std::ostream&);
+        friend std::ostream& operator<<(std::ostream&, ProbeClass&);
     private:
         unsigned int object_count;
 };
