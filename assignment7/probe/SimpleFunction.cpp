@@ -3,6 +3,7 @@
 void function1(void);
 void function2(void);
 
+/* p1 counts function1()'s call count */
 ProbeClass p1;
 
 int main()
