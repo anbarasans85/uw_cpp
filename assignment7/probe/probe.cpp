@@ -19,9 +19,9 @@ void ProbeClass::operator--()
     object_count--;
 }
 
-std::ostream& operator<<(std::ostream& out)
+std::ostream& operator<<(std::ostream& out, ProbeClass &p1)
 {
-    out << "ProbeClass Op. Overloading Count: " << object_count;
+    out << "ProbeClass Op. Overloading Count: " << p1.object_count << std::endl;
 
     return out;
 }
