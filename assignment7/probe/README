@@ -1,4 +1,4 @@
 ProbeTest.cpp tests the ProbeClass when ProbeClass is used in a class.
 
 SimpleFunction.cpp is a stand-alone program that uses ProbeClass and
-demonstrates the its use in a function.
+demonstrates its use in a function.
